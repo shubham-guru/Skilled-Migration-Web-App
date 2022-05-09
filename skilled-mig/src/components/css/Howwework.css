@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+.box p {
+    text-align: justify;
+    padding: 2%;
+	margin: 0em 4em 0 4em ;
+	font-family: 'Lato', sans-serif;
+}
+.subHeading{
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0 1em 0;
+    letter-spacing: 10px;
+    /* box-shadow: 5px 5px 20px #000; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+}

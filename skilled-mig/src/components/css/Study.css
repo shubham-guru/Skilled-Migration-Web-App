@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+.wrapper {
+  animation: sliding-background 40s linear infinite;
+  background: url("../../images/textBg.jpg") no-repeat left/120%;
+  /* height: 100vh; */
+  text-align: center;
+  /* width: 100vw; */
+}
+
+.title {
+  background: white;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4em;
+  letter-spacing: 0.5em;
+  line-height: 2em;
+  text-align: center;
+  z-index: -100;
+  /* margin: 0; */
+  mix-blend-mode: lighten;
+  text-transform: uppercase;
+  text-shadow: 0 0 0px, 1px 1px black, 2px 2px black, 3px 3px black, 
+  4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black, 
+  9px 9px black, 10px 10px black, 11px 11px black, 12px 12px black, 13px 13px black, 
+  14px 14px black, 15px 15px black, 16px 16px black, 17px 17px black, 18px 18px black, 
+  19px 19px black, 20px 20px black, 21px 21px black, 22px 22px black, 23px 23px black,
+  24px 24px black, 25px 25px black, 26px 26px black, 27px 27px black, 28px 28px black,
+  29px 29px black, 30px 30px black, 31px 31px black, 32px 32px black, 33px 33px black;
+}
+.title:before {
+  color: white;
+  content: attr(data-text);
+  position: absolute;
+}
+
+@keyframes sliding-background {
+  0%, 100% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+}
+.mainDiv{
+  margin: 10%;
+  font-size: 2em;
+  font-family: 'Merriweather', serif;
+}
+.countryForm input{
+  display: none;
+}
+.countryForm {
+  border: solid 1px #ddd;
+  padding: 4%;
+  margin: 2%;
+  border-left: solid 5px #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.radioLabel {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.radioLabel span {
+  position: relative;
+  font-size: 0.5em;
+  /* line-height: 22px; */
+}
+
+.radioLabel span:before,
+.radioLabel span:after {
+  content: '';
+}
+
+.radioLabel span:before {
+  border: 1px solid #222021;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.radioLabel span:after {
+  background: #222;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -3px;
+  left: 3px;
+  transition: 300ms;
+  opacity: 0;
+}
+.radioLabel input:checked+span:after {
+  opacity: 1;
+}
+.mainDiv img{
+  margin: 1%;
+}
+.detailsForm{
+    border: solid 1px #ddd;
+    padding: 4%;
+    margin: 2%;
+    border-left: solid 5px #000;
+    display: flex;
+    flex-direction: column;
+}
+.detailsForm input{
+  padding: 1.5%;
+  width: 40%;
+  margin: 2%;
+  border: solid 1px #000;
+  outline: none;
+}
+.detailsForm select{
+  margin: 2%;
+  padding: 1.5%;
+  border: solid 1px #000;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  cursor: pointer;
+}
+.inputLabel{
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+.customeButton{
+  font-size: 0.5em;
+}
+.eduDiv select{
+  width: 100%;
+}
+.grayBox{
+  background-color: #f2f2f2;
+  padding: 5%;
+}
+.grayBox h6{
+  color: #888;
+  font-size: 0.5em;
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.workBox{
+    background-color: #f8f9fb;
+}
+.innerBox{
+    display: flex;
+    align-items: center;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 5%;
+}
+.innerBox div{
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #ddd;
+    padding: 3%;
+    margin: 2%;
+    font-family: 'Merriweather', serif;
+    width: 40%;
+}
+.innerBox div p {
+    font-family: 'Lato', sans-serif;
+    margin-top: 2%;
+}
+.coursesBox{
+    background-color: #fff;
+    padding: 3%;
+    font-family: 'Georgia';
+}
+.coursesBox div{
+    margin-top: 2%;
+}
+.coursesBox div ul{
+    display: flex;
+    list-style: none;
+}
+.detailedBox{
+    border: solid 1px #ddd;
+    padding: 2%;
+}
+.detailedBox h2{
+    margin-bottom: 1%;
+    font-family: 'Cabin', sans-serif;
+}
+.detailedBox p{
+    font-size: 15px;
+    width: 70%;
+}
+.button2{
+    border: solid 1px #000;
+    background: transparent;
+    padding: 1%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+.button2:hover{
+    background-color: rgb(243, 241, 241);
+}
+.courseDescp div img{
+    width: 80%;
+}
+.detailedBox div{
+    display: flex;
+}
+.courseDescp div h4{
+    font-size: 0.9em;
+    width: 60%;
+    margin-top: 2%;
+}
+.courseDescp div p{
+    font-size: 12px;
+    margin-top: 2%;
+}
+.courseDescp div{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    width: 90%;
+    cursor: pointer;
+}
+.courseDescp div:hover img{
+    opacity: 0.9;
+}
+.menu ul{
+    display: flex;
+    padding: 1%;
+    align-items: center;
+}
+.menu ul li{
+    margin: 0.1%;
+    text-align: center;
+    cursor: pointer;
+}
+.innerMenu{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.innerMenu li{
+    padding: 1%;
+}
+.menu ul li img{
+    width: 150px;
+    height: auto;
+}
+.search__input {
+    /* width: 100%; */
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;    
+    color: #575756;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search__input::placeholder {
+        color: rgba(87, 87, 86, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+.search__input:hover,
+    .search__input:focus {
+        padding: 12px 0;
+        outline: 0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #575756;
+        border-radius: 0;
+        background-position: 100% center;
+}
+.xaButton{
+    padding: 6%;
+    font-size: 14px;
+    border: solid 1px #000;
+    background-color: #fff;
+    font-weight: bold;
+    width: 100px;
+}
+.xaButton:hover{
+    background-color: rgb(236, 234, 234);
+}
